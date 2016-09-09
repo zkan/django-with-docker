@@ -1,0 +1,12 @@
+.git*
+.dockerignore
+*.md
+Dockerfile
+*.swp
+env/
+ENV/
+*/*.sqlite3
+*.pyc
+*/*.pyc
+*/*/*.pyc
+*/*/*/*.pyc
