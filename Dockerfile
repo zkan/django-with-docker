@@ -5,7 +5,7 @@ ENV APPLICATION_ROOT /app/
 
 RUN apt-get update
 RUN pip install --upgrade pip
-RUN pip install Django==1.10.1 uWSGI==2.0.13.1
+RUN pip install Django==1.10.1 psycopg2==2.6.2 uWSGI==2.0.13.1
 
 RUN mkdir -p $APPLICATION_ROOT
 WORKDIR $APPLICATION_ROOT
