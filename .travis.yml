@@ -1,0 +1,12 @@
+language: python
+
+python:
+  - 2.7
+
+install:
+  - pip install -r requirements.txt
+
+script:
+  - cd twitter_clone
+  - python manage.py migrate --settings=twitter_clone.settings.test
+  - python manage.py test --settings=twitter_clone.settings.test
