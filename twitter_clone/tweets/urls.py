@@ -1,8 +1,8 @@
-from django.conf.urls import url
+from django.urls import path
 
 from .views import index as tweets_index
 
 
 urlpatterns = [
-    url(r'^$', tweets_index, name='tweets'),
+    path("", tweets_index, name="tweets"),
 ]
