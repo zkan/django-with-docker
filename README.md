@@ -1,3 +1,7 @@
 # Django with Docker (Compose)
 
-[![Build Status](https://travis-ci.org/zkan/django-with-docker.svg?branch=master)](https://travis-ci.org/zkan/django-with-docker)
+To generate the `requirements.txt` file:
+
+```bash
+poetry export --without-hashes --format=requirements.txt > requirements.txt
+```
